@@ -1,6 +1,6 @@
-permalink: /:categories/:title/
-paginate: 5
+permalink: /archive/:title/
 url: http://www.tjmaynes.com
-title: TJMaynes
+author: TJ Maynes
 server_port: 4000
 github_user: tjmaynes
+paginate: 3

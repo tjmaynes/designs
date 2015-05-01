@@ -1,7 +1,8 @@
-permalink: /blog/:categories/:title/
+highlighter: pygments
+markdown: kramdown
+permalink: /archive/:title/
 url: http://www.tjmaynes.com
-title: TJ Maynes
-server_port: 4000
+author: TJ Maynes
+port: 4000
 github_user: tjmaynes
-auto: yes
 paginate: 3

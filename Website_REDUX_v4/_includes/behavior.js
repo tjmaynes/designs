@@ -1,29 +1,33 @@
-function theme()
-{
-	//test for Internet Explorer 6.x
-	if (/MSIE (\d+\.\d+);/.test(navigator.userAgent))
-	{
-		var ieversion = new Number(RegExp.$1);
-		if (ieversion <= 8)
-		{
-			/*redirect to /IE/error.html*/
-			window.location = "http://www.tjmaynes.com/ie.html";
-		}
-		else
-		{
-			var image_array = ["1", "2", "3", "4", "5", "6", "7", "9", "10"];
-			var random_number = Math.floor(Math.random()*image_array.length); 
-			var image_random = image_array[random_number];
-			var image = "/images/" + image_random + ".png";
-			document.getElementById('front-image').setAttribute('src', image);
-		}
-	}
-	else
-	{
-		var image_array = ["1", "2", "3", "4", "5", "6", "7", "9", "10"];
-		var random_number = Math.floor(Math.random()*image_array.length); 
-		var image_random = image_array[random_number];
-		var image = "/images/" + image_random + ".png";
-		document.getElementById('front-image').setAttribute('src', image);
-	}
+function date(id){
+  date = new Date();
+  year = date.getFullYear();
+  month = date.getMonth();
+  time = new Date();
+  hr = time.getHours();
+  min = time.getMinutes();
+  sec = time.getSeconds();
+  months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+  d = date.getDate();
+  day = date.getDay();
+  days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+  ampm = " PM "
+  
+  if (hr < 12){
+	 ampm = " AM "
+  }
+  if (hr > 12){
+	 hr -= 12
+  }
+  if (hr < 10){
+	 hr = " " + hr
+  }
+  if (min < 10){
+	 min = "0" + min
+  }
+  if (sec < 10){
+	 sec = "0" + sec
+  }
+
+  res =  months[month]+' '+d+', '+year + ' ' + hr + ":" + min + " "+ ampm;
+  document.getElementById(id).innerHTML = res;
 };

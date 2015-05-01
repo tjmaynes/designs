@@ -1,69 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html template="true"><head>
-  <title>TJMaynes.com</title>
-
-  
-  
-  <link rel="apple-touch-icon" href="ios_splash.png">
-
-  
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
-  
-  <link rel="apple-touch-startup-image" href="ios_splash.png">
-
-  
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  
-  <meta name="HandheldFriendly" content="true">
-
-  
-  <meta name="viewport" content="width=1400, height=980, user-scalable=yes">
-
-  
-  <meta name="description" content="Official Website of TJ Maynes">
-
-  
-  <meta name="keywords" content="tj, maynes, tjmaynes, tj maynes, photography, canon, usc, University of South Carolina,HTML5, Youtube, sex, ModelMayhem, Facebook, FB, g+, T Maynes, Columbia, Gamecocks">
-
-  
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-
-</head><body style="background-image: url(images/site_bg.jpg);">
-<div class="title">
-<img src="images/tjmaynes.png"><img src="images/h2.png"></div>
-
-<div class="menu">
-<a href="index.html">Home</a>
-<a href="http://www.lytewaves.com/">LyteWaves</a>
-<a href="resume.pdf">Resume</a>
-<a href="contact.html">Contact</a>
-</div>
-
-<div id="passport">
-<img src="images/thumbs/Me.jpg"></div>
-
-<div id="welcome">
-<p>&gt;My Name is TJ Maynes. I'm a full
-time student at the University of South Carolina in Columbia. I'm
-always open for photo opportunities and
-computer questions.<br>
-<br>
-&gt;I enjoy the free time I have programming and writing scripts for
-future film projects. If you
-need a photographer/or computer geek, I check my email every couple
-hours. Constructive criticism is always welcomed.
-<br>
-<br>
-&gt;Check out my
-<a href="http://www.twitter.com/tjmaynes">Twitter</a> for updates!
-Thank you again for checking out my
-website!</p>
-</div>
-
-<div id="social">
-<div class="social_menu"><a href="http://www.flickr.com/photos/tmaynes/"><img src="images/icons/flickr.png"></a><a href="http://www.modelmayhem.com/2287465"><img src="images/icons/modelmayhem.png"></a><a href="http://www.youtube.com/tjmaynes"><img src="images/icons/youtube.png"></a><a href="http://www.linkedin.com/in/tjmaynes"><img src="images/icons/linkedin.png"></a><a href="https://plus.google.com/109125114732631423874/posts?hl=en"><img src="images/icons/google.png"></a><a href="http://www.facebook.com/tjmaynes"><img src="images/icons/facebook.png"></a><a href="http://www.twitter.com/tjmaynes"><img src="images/icons/twitter_64.png"></a><a href="http://www.themavenspeaks.com"><img src="images/icons/wordpress_64.png"></a></div>
-</div>
-
-</body></html>
+---
+layout: main
+title: Cinema. Web. Photo.
+---
+{% assign posts = site.posts %}
+{% include posts.html %}
+{% include cinema.html %}
+{% include web.html %}
+{% include photo.html %}

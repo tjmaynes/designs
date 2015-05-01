@@ -1,9 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url('../../font/MonoSocialIconsFont-1.10.eot');
+  src: url('../../font/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+  url('../../font/MonoSocialIconsFont-1.10.woff') format('woff'),
+  url('../../font/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+  url('../../font/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: url('../../font/MonoSocialIconsFont-1.10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   padding:0px;
   margin:0px;
-}
-em{
-  font-style: italic;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -14,8 +23,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -24,154 +33,209 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-ol, ul {
-  list-style: none;
-  width:100%;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-img{
-  max-width:100%;
-  height:auto;
-  margin-top:10px;
-}
-a:active,a:focus{
-  outline: none;
-}
-a:hover, a{
-  text-decoration:none;
-  color:#36648B;
-  outline: none;
-}
-a:hover{
-  opacity:0.8;
-}
-html, body{
+body {
+  padding:50px;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
+  font-weight:300;
+  background:#fbfbfb;
 }
-body{
-  line-height:1;
-  font-family:'GudeaRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  color:#444;
+  margin:0 0 20px;
 }
-hr{
-  border-width:1px 0px;
-  line-height:15px;
-  border-style: solid none;
-  border-color:#ddd;
+ol, ul{
+  margin:0 0 10px;
 }
-p{
-  padding: 10px 20px;
-  margin:0 auto;
-  font-size:1.0em;
-  line-height:1.6;
+p, table, pre, dl {
+  margin:0 0 20px 0;
 }
-h1{
-  font-size:22px;
-  padding-top:10px;
+#about p{
+  margin:0 0 5px 0;
 }
-h2{
-  text-align:left;
+.header-info{
+  font-size: 18pt;
+  font-weight: 800;
+  padding: 0px 0px 5px 0px;
 }
-h3{
-  text-align:center;
-  font-size:16px;
-  padding-top:5px;
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
-header{
-  font-size:2.0em;
-  color:#999;
-  letter-spacing: 3px;
-  padding:10px 0px 10px 15px;
-  text-align:left;
-}
-
-/*Content*/
-#container{
-  text-align:justify;
-  padding:5px 10px;
-  max-width:980px;
-  margin: 0 auto;
-}
-#menu, #date{
-  letter-spacing: 3px;
-  text-align:center;
-}
-#menu{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-#date{
-  padding-top:15px;
-  font-size:11pt;
-}
-#menu ul li a{
-  font-size: 0.9em;
-}
-#banner ul li, .archive ul li {
-  display: block;
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 250%;
 }
 nav ul li {
   display: inline;
 }
-.archive{
-	padding-bottom:10px;
+#blog, #slides{
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, monospace;
 }
-.content{
-  margin:0 0 0 33%;
-  padding-top:10px;
-  padding-bottom:5px;
-  padding-left:2em;
+#blog ol, #blog ul, #slides ol, #slides ul{
+  margin:0;
 }
-.sidebar{
-  float:left;
-  width:33%;
-  text-align: left;
+#blog ul li, #slides ul li{
+  display: block;
+  font-size: inherit;
+}
+.author{
+  font-style: italic;
+  font-size: 10pt;
 }
 .post{
-  padding-top:10px;
+  padding:0 5px 5px 5px;
 }
-.wall-post-odd, .wall-post-even, .wall-post a{
-  padding:5px;
+.post h1{
+  font-size:1.0em;
 }
-#pagination{
-  padding-bottom: 10px;
-  text-align:center;
-  font-size:18px;
-  padding-top:10px;
+.post ul{
+  list-style-type:circle;
+  padding:0px 10px;
 }
-#disqus_thread{
-  padding-top: 10px;
-  color:#4F4F4F;
+.post ol{
+  list-style-type:decimal;
+  padding:0px;
 }
-
-/*Extras*/
-.post>p:first-child, .bio>p:first-child{
-  text-indent: 40px;
+.post li{
+  padding: 5px 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.post p{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1.5;
+  color: #444;
+}
+.post p a, .post p a:hover{
+  text-decoration: underline;
 }
 .post>p:last-child:after {
   content: " -TJ";
 }
-.wall-post-even, header{ 
-  background-color: #F2EDE2;
-  border: 1px dashed #ccc;
+.post img{
+  box-shadow: none;
+  width: 100%;
+  margin:5px 0px 10px 0px;
+  -moz-box-shadow: 0 0 2px 2px #999;
+  -webkit-box-shadow: 0 0 2px 2px #999;
+  box-shadow: 0 0 2px 2px #999;
 }
-img:last-child:after{
- padding-bottom: 10px;
-}
-footer{
-  font-size: 11pt;
+.social{
+  float: right;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-size: 9pt;
+  width: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
+#date{
+  padding: 0px 0px 15px 0px;
+}
+#disqus_thread{
+  padding: 15px;
+}
+#disqus_thread a, #disqus_thread a:hover{
+  color:#28AE7B;
+}
+h1, h2, h3 {
+  line-height:1.1;
+}
+h1 {
+  font-size:28px;
+}
+h2 {
+  color:#393939;
+}
+h3, h4, h5, h6 {
+  color:#494949;
+}
+a {
+  color:#222;
+  font-weight:400;
+  text-decoration:none;
+}
+a:hover {
+  color:#222;
+}
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.6em;
+  display:block;
+}
+a:hover small {
+  color:#777;
+}
+p a, p a:hover{
+  color:#8B8878;
+}
+.wrapper {
+  max-width:860px;
+}
+blockquote {
+  border-left:1px solid #e5e5e5;
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
+}
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
+  color:#333;
+  font-size:12px;
+}
+pre{
+  padding:10px;
+  background: #fbfbfb;
+  line-height:1.42857;
+  overflow: auto;
+}
+#about img{
+  margin-right:15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  -webkitbkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0,img 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-smallhadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+img {
+  max-width:100%;
+}
+strong {
+  color:#444;
+  font-weight:700;
+}
+small {
+  font-size:11px;
+}
+hr {
+  border:0;
+  background:#555;
+  height:1px;
+  margin:20px 0 20px;
+}
+.main{
+  width:auto;
+}
+section {
+  max-width:500px;
+  border:1px solid #777;
+  border-width:1px 0;
+  padding:20px 0;
+  margin:0 0 20px;
+}
+{% include pygment_trac.css %}

@@ -1,6 +1,9 @@
+highlighter: pygments
+markdown: kramdown
 permalink: /archive/:title/
 url: http://www.tjmaynes.com
 author: TJ Maynes
-server_port: 4000
+port: 4000
 github_user: tjmaynes
 paginate: 3
+timezone: America/New York

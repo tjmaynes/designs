@@ -2,5 +2,4 @@
 ---
 {% include fonts.css %}
 {% include main.css %}
-{% include mobile.css %}
 {% include 404.css %}

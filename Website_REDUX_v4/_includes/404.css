@@ -1,26 +1,21 @@
 /*404 Error CSS*/
-#nopage-container
-{
+#nopage-container{
 	position:relative;
-    margin:30pt auto;
-    max-width:640px;
-    text-align:justify;
+  margin:30pt auto;
+  max-width:640px;
 }
-#nopage-container h1
-{
+#nopage-container h1{
 	font-family: Courier;
 	font-size:30px;
 	padding-bottom:15px;
 }
-#nopage-container h2
-{
+#nopage-container h2{
 	font-family: Courier;
 	font-size:20px;
 	padding:5px;
 	text-indent:40px;
 }
-#nopage-container h3
-{
+#nopage-container h3{
 	font-family: Courier;
 	font-size:20px;
 	padding-top:15px;

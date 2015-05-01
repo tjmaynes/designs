@@ -1,4 +1,4 @@
 ---
 ---
 {% include cookies.js %}
-{% include behavior.js %}
+{% include scale.fix.js %}
