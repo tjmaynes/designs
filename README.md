@@ -11,3 +11,5 @@
 ![v4](/screenshots/v4.png)
 
 ![v6](/screenshots/v6.png)
+
+![v7](/screenshots/v7.png)
