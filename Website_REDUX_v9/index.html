@@ -2,22 +2,11 @@
   <meta charset="utf-8">
   <title>TJ Maynes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="TJ Maynes - Hacker | Explorer">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css">
   <style>
-@font-face {
-  font-family: 'Inconsolata';
-  src: url('./public/fonts/inconsolata-regular.eot') format('embedded-opentype'), url('./public/fonts/inconsolata-regular.eot?#iefix') format('embedded-opentype'), url('./public/fonts/inconsolata-regular.woff') format('woff'), url('./public/fonts/inconsolata-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Inconsolata';
-  src: url('./public/fonts/inconsolata-bold.eot') format('embedded-opentype'), url('./public/fonts/inconsolata-bold.eot?#iefix') format('embedded-opentype'), url('./public/fonts/inconsolata-bold.woff') format('woff'), url('./public/fonts/inconsolata-bold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: 800;
-}
-
 * {
   padding:0px;
   margin:0px;
@@ -45,25 +34,24 @@ time, mark, audio, video {
 
 body {
   font: 16px/1.5 "Inconsolata", "Lucida Sans Typewriter", "Lucida Console", Monaco, monospace;
-  background-color: #333;
-  color: #fafafa;
+  background-color: #fbfbfb;
+  color: #0e0e0e;
 }
 
 p {
+  font-size: 1.3em;
   line-height: 1.3;
   text-align: left;  
   padding-bottom: 8px;
-  font-size: 1.6em;
 }
 
 a, a:hover {
-  color: #6cc644;
   text-decoration: none;
   font-weight: bold;
 }
 
 .wrapper {
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 24px 18px;
 }
@@ -73,15 +61,26 @@ header, footer {
 }
 
 section {
-  margin: 2.3em 2.3em 3.4em 2.3em;
+  margin: 2.5em 2.3em 3.4em 2.5em;
+}
+
+.about p {
+  text-align: center;
+  padding-bottom: 22px;
 }
 
 .about p:first-child {
-  font-size: 2.5em;
+  font-size: 1.5em;
+}
+
+.about a, .about a:hover {
+  font-weight: bold;
+  color: #6cc644;
 }
 
 .social {
   display: flex;
+  justify-content: center;
 }
 
 .social ul {
@@ -91,49 +90,26 @@ section {
 
 .social ul li {
   padding: 14px;
+  font-size: 1.5em;
 }
 
 .social ul li:first-child {
   padding: 14px 14px 14px 0;
 }
-
-footer p {
-  font-size: 1.3em;
-}
-
-      @media only screen and (max-width: 600px) {
-        .about p {
-          text-align: center;
-          font-size: 1.3em;
-          padding-bottom: 22px;
-        }
-
-        .about p:first-child {
-          font-size: 1.5em;
-        }
-
-        .social {
-          justify-content: center;
-        }
-
-        footer p {
-          font-size: 1.0em;
-          text-align: center;
-        }
-      }
   </style>
 </head>
 <body>
   <div class="wrapper">
     <section>
       <article class="about">
-        <p>Hi, I'm TJ. I'm a Software Engineer at VMware Pivotal Labs. <a href="https://linkedin.com/in/tjmaynes" target="_blank">Say hello!</a></p>
-        <p>Find me on <a href="https://github.com/tjmaynes/" target="_blank">GitHub</a>, <a href="https://youtube.com/tjmaynes">YouTube</a> and <a href="https://instagram.com/tjmaynes">Instagram</a>.</p>
+        <p>Hi, I'm TJ. I'm a Software Engineer at VMware Pivotal Labs. <a href="https://linkedin.com/in/tjmaynes">Say hello!</a></p>
+        <nav class="social">
+          <ul>
+            <li><a href="https://github.com/tjmaynes"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+	        <li><a href="https://vimeo.com/tjmaynes"><i class="fab fa-vimeo-v" aria-hidden="true"></i></a></li>
+          </ul>
+        </nav>
       </article>
     </section>
-    <footer>
-      <p>Built with ❤️  on <a href="https://github.com/tjmaynes/tjmaynes.github.io/">GitHub Pages</a>.</p>
-      </article>
-    </footer>
   </div>
 </body>
